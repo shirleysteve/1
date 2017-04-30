@@ -7,7 +7,6 @@
   <title>
     {{ page.title }}
     {% if page.category == 'blog' and page.url != '/blog/index.html' %}
-    - XU Lei
     {% endif %}
   </title>
   <link rel="stylesheet" href="/css/site.css">
@@ -38,8 +37,10 @@
     <header class="inner">
       <nav>
         <a class="{% if page.category == 'about' %} selected {% endif %}" href="/">About</a>
+        
         <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">Blog</a>
-        <a class="{% if page.category == 'portfolio' %} selected {% endif %}" href="/research/">Research</a>
+        
+        <a class="{% if page.category == 'research' %} selected {% endif %}" href="/research/">Research</a>
         
      
         <!-- <a class="{% if page.category == 'contact' %} selected {% endif %} contact" href="/contact/">Contact</a> -->
