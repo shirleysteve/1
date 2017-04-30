@@ -16,6 +16,4 @@ gems:
   - jekyll-sitemap
   - jekyll-redirect-from
   
-# Comment
-comment:
-    disqus: shirleyfly1218
+
