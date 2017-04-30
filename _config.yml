@@ -15,3 +15,7 @@ include:
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
+  
+# Comment
+comment:
+    disqus: XU Lei
