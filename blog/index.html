@@ -24,8 +24,6 @@ category: blog
 
 <section class="inner">
   <ul class="posts">
-    {% for post in site.posts %}
-	  {{post.date | date:"%Y"}}{% endcapture %}
 
     <a class='post-link-in-posts' href="{{ site.url }}{{ post.url }}">
         <span class='date'>{{ post.date | date_to_string }}</span>
