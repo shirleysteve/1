@@ -10,7 +10,8 @@
     {% endif %}
   </title>
   <link rel="stylesheet" href="/css/site.css">
-  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu+Mono|Roboto:400,700,300italic">
+   <link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+  <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu+Mono|Roboto:400,700,300italic">-->
   <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
   {% if page.description %}<meta name="description" content="{{page.description}}" />{% endif %}
 
@@ -24,8 +25,8 @@
 
   {% if page.category == 'blog' %}
     {% if page.photo %}
-      <meta property="og:type" content="article">
-      <meta property="og:image" content="http://sebastien.saunier.me/images/posts/{{ page.photo }}" />
+      <!--<meta property="og:type" content="article">-->
+      <meta property="og:image" content="/images/posts/{{ page.photo }}" />
     {% endif %}
   {% endif %}
 </head>
