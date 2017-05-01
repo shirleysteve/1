@@ -4,11 +4,12 @@ title: XU Lei - Blog
 description: anything, everything
 category: blog
 ---
+<link rel="stylesheet" href="../css/blog.css">
 
-<section class="inner">
-  <!--<h1>Blog</h1>
+<!--<section class="inner">
+  <h1>Blog</h1>
   <p>My thoughts on Technology, Software Engineering, Lean Startup, Tools and Freelancing.</p>
-  <ul class="posts">-->
+  <ul class="posts">
     {% for post in site.posts %}
       <li>
         <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
@@ -17,6 +18,28 @@ category: blog
         <br />
         <span class="description">{{ post.description }}</span>
       </li>
+    {% endfor %}
+  </ul>
+</section>-->
+
+<section class="inner">
+  <ul class="posts">
+    {% for post in site.posts %}
+	  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+	  {% if year != y %}
+		{% assign year = y %}
+		<span class="listing-seperator">{{ y }}</span>
+	  {% endif %}
+    <a class='post-link-in-posts' href="{{ site.url }}{{ post.url }}">
+        <span class='date'>{{ post.date | date_to_string }}</span>
+        <span class='article'>{{ post.title }}</span>
+		<div class="tag-in-index-post">
+        <i class="fa fa-tags"></i>
+          <div class="tag">
+		        {{ post.tags | first }}
+          </div>
+        </div>
+    </a>
     {% endfor %}
   </ul>
 </section>
