@@ -224,7 +224,8 @@ article .inner {
 }
 
 article {
-  background-color: #3073b3;
+  /*background-color: #3073b3;*/
+  background-color: white;
 }
 
 article .post {
