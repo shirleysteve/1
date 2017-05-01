@@ -1,19 +1,36 @@
 title: XU Lei
 
+permalink: /blog/:title.html
 # Overriden by GitHub Pages: https://help.github.com/articles/using-jekyll-with-pages#configuring-jekyll
 safe: true
 lsi: false
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
-# Keybase
-include:
-  - .well-known
 
-# White-listed plugins
+markdown: kramdown
+kramdown:
+    input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+    extensions:
+    - autolink
+    - footnotes
+    - smart
+hard_wrap: false
+
+syntax_highlighter: rouge
 gems:
   - jekyll-sitemap
-  - jekyll-redirect-from
+  
+#markdown: redcarpet 
+#redcarpet:
+ # extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
+## Keybase
+#include:
+ # - .well-known
+
+# #White-listed plugins
+#gems:
+ # - jekyll-sitemap
+  #- jekyll-redirect-fro
+  
   
 
