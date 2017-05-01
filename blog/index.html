@@ -24,7 +24,12 @@ category: blog
 
 <section class="inner">
   <ul class="posts">
-
+{% for post in site.posts %}
+	  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+	  {% if year != y %}
+		{% assign year = y %}
+		
+	  {% endif %}
     <a class='post-link-in-posts' href="{{ site.url }}{{ post.url }}">
         <span class='date'>{{ post.date | date_to_string }}</span>
         <span class='article'>{{ post.title }}</span>
