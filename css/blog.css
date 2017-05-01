@@ -33,7 +33,7 @@ article h1 {
   font-size: 0.9rem;
   margin-top: 4px;
   padding: 4px 8px;
-  text-align: center !important;
+  text-align: left !important;
 }
 
 p{
@@ -90,7 +90,7 @@ ul{margin:0;padding:0}
  }
 
 .post-header {
-    text-align: left;
+    text-align: center;
     margin-bottom: 50px;
     padding-top: 30px;
     padding-left: 5px;
@@ -104,7 +104,7 @@ ul.posts {
   max-width: 760px; /*680*/
   margin-left: auto;
   margin-right: auto;
-  text-align: left;
+  text-align: center;
   width: 100%;
   display: block;
 }
