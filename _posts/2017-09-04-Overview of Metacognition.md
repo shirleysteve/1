@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: 有效学习系列之：元认知概述(Overview of Metacognition)
+title: 元认知概述(Overview of Metacognition)
 ---
 
 
