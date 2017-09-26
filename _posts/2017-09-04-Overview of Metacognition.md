@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: 元认知概述(Overview of Metacognition)
+title: 元认知概述
 ---
 
 
