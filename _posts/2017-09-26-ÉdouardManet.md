@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: A glance of Édouard Manet
+title: 【偶遇】Édouard Manet
 ---
 
 
